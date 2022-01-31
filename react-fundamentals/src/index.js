@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import First from './components/basics/First'
-import ComParams from './components/basics/ComParams'
 import './index.css';
+import App from './App';
 
 
 ReactDOM.render(
-  <div>
-    <First />
-    <ComParams titulo="apredendo React" subtitulo="Interessante"/>
-  </div>,
+
+   <App />,
   document.getElementById('root')
 );
