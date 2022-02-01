@@ -2,8 +2,15 @@ import React from "react";
 import "./Card.css";
 
 export default (props) => {
-  return (
-    <div className="card">
+ 
+    const cardStyle = {
+        backgroundColor: props.color || '#008',
+        borderColor: props.color || '#F00'
+    }
+
+ 
+    return (
+    <div className="card" style={cardStyle}>
       {/*No React para chamar uma classe utilizamos o atributo ClassName ao invés de class */}
       <div className="title">{props.titulo}</div>
       <div className="content">

@@ -13,16 +13,16 @@ export default function () {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
-        <Card titulo="Desafio Número Aleatório">
+        <Card titulo="Desafio Número Aleatório" color='#DCC48E' >
           <Random min={2} max={10} /> {/*Cada elemento é um filho(children) */}
           <Random min={2} max={10} />
         </Card>
 
-        <Card titulo="Com parâmetros">
+        <Card titulo="Com parâmetros" color='#EAEFD3'>
           <ComParams titulo="apredendo React" subtitulo="Interessante" />
         </Card>
 
-        <Card titulo="Primeiro Componente">
+        <Card titulo="Primeiro Componente" color="#A4B493">
           <First />
         </Card>
       </div>
