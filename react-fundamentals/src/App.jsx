@@ -2,6 +2,8 @@ import React from "react";
 import ComParams from "./components/basics/ComParams";
 import First from "./components/basics/First";
 import Random from "./components/basics/Aleatorio";
+import Familia from "./components/basics/Familia";
+import FamiliaMembro from "./components/basics/FamiliaMembro";
 import Card from "./components/layout/Card";
 import "./App.css";
 
@@ -13,12 +15,22 @@ export default function () {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
-        <Card titulo="Desafio Número Aleatório" color='#DCC48E' >
+        <Card titulo="Componentes com filhos" color="#F9D362">
+          <Familia sobrenome="Gomes">
+            <FamiliaMembro nome="Joana" />
+            {/*Pegará a prop do elemento Familia no App.jsx */}
+            <FamiliaMembro nome="Helena" />
+            <FamiliaMembro nome="Paulo" />
+            <FamiliaMembro nome="Cleber" />
+          </Familia>
+        </Card>
+
+        <Card titulo="Desafio Número Aleatório" color="#DCC48E">
           <Random min={2} max={10} /> {/*Cada elemento é um filho(children) */}
           <Random min={2} max={10} />
         </Card>
 
-        <Card titulo="Com parâmetros" color='#EAEFD3'>
+        <Card titulo="Com parâmetros" color="#EAEFD3">
           <ComParams titulo="apredendo React" subtitulo="Interessante" />
         </Card>
 
