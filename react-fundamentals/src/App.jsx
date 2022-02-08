@@ -1,11 +1,15 @@
+import "./App.css";
 import React from "react";
-import ComParams from "./components/basics/ComParams";
-import First from "./components/basics/First";
-import Random from "./components/basics/Aleatorio";
+
+import Card from "./components/layout/Card";
+
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 import Familia from "./components/basics/Familia";
 import FamiliaMembro from "./components/basics/FamiliaMembro";
-import Card from "./components/layout/Card";
-import "./App.css";
+import Random from "./components/basics/Aleatorio";
+import ComParams from "./components/basics/ComParams";
+import First from "./components/basics/First";
 
 export default function () {
   //Podemos criar essa função sem um nome, ou seja uma função anônima, OU podemos utiilizar com uma Arrow function msm
@@ -15,6 +19,12 @@ export default function () {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="Repetição de produtos" color="#758695">
+          <TabelaProdutos></TabelaProdutos>
+        </Card>
+        <Card titulo="Repetição" color="#99D6CE">
+          <ListaAlunos></ListaAlunos>
+        </Card>
         <Card titulo="Componentes com filhos" color="#F9D362">
           <Familia sobrenome="Gomes">
             <FamiliaMembro nome="Joana" />
