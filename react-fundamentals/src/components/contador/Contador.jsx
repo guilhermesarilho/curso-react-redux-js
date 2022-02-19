@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+
+import PassoForm from "./PassoForm";  //importará o componente filho...
+import Botoes from "./Botoes";
+import Display from "./Display";
 import "./Contador.css"
 
 //Criando uma classe:
@@ -40,22 +44,15 @@ export default class Contador extends Component {
     return (
       <div className="Contador">
         <h2>Contador</h2>
-        <label htmlFor="passoInput">Passo:</label>
-
-        <input
-          id="passoInput"
-          type="number"
-          value={this.state.passo}
-          onChange={this.setPasso}
-        />
+        <PassoForm 
+        mudancaDoValor={this.setPasso}
+        passo={this.state.passo}/
+        >
     <br />
-        <button onClick={this.inc}>+</button>
-        <button onClick={this.dec}>-</button>
-
-        <p>Valor: {this.state.numero}</p>
+        <Display numero={this.state.numero}/>
         {/* <p>Valor: {this.props.numeroInicial}</p> A propriedade que representa a instância dessa classe */}
+        <Botoes incrementar={this.inc} decrementar={this.dec}/>
       </div>
     );
-    console.log("valor", this.state.numero);
   }
 }

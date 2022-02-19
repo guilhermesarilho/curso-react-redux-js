@@ -3,6 +3,7 @@ import React from "react";
 
 import Card from "./components/layout/Card";
 
+import Megasena from "./components/megasena/Megasena"
 import Contador from "./components/contador/Contador";
 import Input from "./components/formulario/Input";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
@@ -25,12 +26,16 @@ export default function () {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
-      <Card titulo="Contador" color="#631A86">
-            <Contador numeroInicial={32} />
+        <Card titulo="Megasena" color="#42E2B8">
+        <Megasena />
+        </Card>
+
+        <Card titulo="Contador" color="#631A86">
+          <Contador numeroInicial={32} />
         </Card>
 
         <Card titulo="Componente Controlado input" color="#71EA93">
-            <Input />
+          <Input />
         </Card>
 
         <Card titulo="Comunicação indireta" color="#B26E63">
