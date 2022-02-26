@@ -1,0 +1,31 @@
+
+.display{
+    grid-column: span 4;
+    background-color: #000;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+}
+/* .display input{
+    height: 50px;
+    width: 230px;
+ margin: 10px auto;
+ display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.display{
+    margin: 0;
+}
+*/
+
+/* 
+.display{
+    background-color: #fff;
+    border: 2px solid;
+    margin: 5px;
+    text-align: center;
+  } */

@@ -1,0 +1,28 @@
+:root{    /*É assim que cria váriaveis no css(não é saas)  */
+  --bg-button: #f0f0f0;
+  --border-button:solid 1px #888;
+}
+.button{
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;  /*Tira o outiline feio quando clica no button*/
+}
+
+.button:active{
+  background-color: #ccc;
+}
+.button.double{ /*Um botão que vai ocupar 2 posições*/
+  grid-column: span 2;
+}
+.button.triple{
+  grid-column: span 3;
+}
+.button.operation{  /*Os botões de  operações serão da cor laranja */
+  background-color: #fa8231;
+  color: #fff;
+}
+.button.operation:active{
+  background-color: #c75509;
+}
